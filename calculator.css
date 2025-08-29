@@ -10,8 +10,7 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: linear-gradient(45deg, #0a0a0a, #3a4452);
-   transition: background 0.5s ease, color 0.5s ease;
+background-image: linear-gradient(45deg, #0a0a0a, #3a4452);
 }
 .calculator{
     border: 2px solid black;
