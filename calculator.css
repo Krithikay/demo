@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: linear-gradient(45deg, #0a0a0a, #3a4452);
+   transition: background 0.5s ease, color 0.5s ease;
+}
+.calculator{
+    border: 2px solid black;
+    padding: 65px;
+     box-shadow: 0 0 15px #000;
+       border-radius: 15px;
+    transition: all 0.5s ease;
+    background-color: #635f5f;
+}
+.calculator-box{
+     box-shadow: 0 0 20px rgba(237, 226, 226, 0.5);
+      animation: pulse 1s infinite;
+      
+}
+@keyframes pulse {
+      0% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+      50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.8); }
+      100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+  }
+.display input{
+    width: 190px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 10px;
+    background: transparent;
+    color: #f3e9e9;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.new-result {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1); 
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease; 
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.05); 
+}
+
+button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.opr {
+    color: #fff; 
+    background: #30c2cc; 
+    font-weight: 700;
+}
+
+#eqBtn {
+    background: rgba(5, 88, 37, 0.8); 
+    font-weight: 900;
+}
+
+.opr:hover {
+    background: #0c408d; 
+}
+
+#eqBtn:hover {
+    background: rgba(9, 228, 118, 1); 
+}
